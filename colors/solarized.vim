@@ -1115,3 +1115,41 @@ autocmd ColorScheme * if g:colors_name != "solarized" | silent! aunmenu Solarize
 "
 " vim:foldmethod=marker:foldlevel=0
 "}}}
+" OVERRIDES  {{{
+" ---------------------------------------------------------------------
+
+exe "hi! DiffAdd"        .s:fmt_revr   .s:fg_green  .s:bg_none
+exe "hi! DiffChange"     .s:fmt_revr   .s:fg_yellow .s:bg_none
+exe "hi! DiffDelete"     .s:fmt_revr   .s:fg_red    .s:bg_none
+exe "hi! DiffText"       .s:fmt_revr   .s:fg_blue   .s:bg_none
+
+"exe "hi! CursorLineNr"   .s:fmt_uopt   .s:fg_base2  .s:bg_base02
+hi CursorLineNr          ctermfg=248   ctermbg=235 guifg=#bcbcbc
+
+" Don't underline folds: changed from s:fmt_undbd to just bolding
+exe "hi! Folded"         .s:fmt_bold   .s:fg_base0  .s:bg_base02
+
+" }}}
+" ADDITIONS {{{
+" ---------------------------------------------------------------------
+
+" Mail
+"hi Normal           ctermfg=253  guifg=#dadada
+hi mailHeader       ctermfg=240  guifg=#585858
+hi mailHeaderKey    ctermfg=246  guifg=#949494
+hi mailHeaderEmail  ctermfg=127  guifg=#af00af
+hi mailEmail        ctermfg=127  guifg=#af00af
+hi mailSubject      ctermfg=178  guifg=#dfaf00
+hi mailURL          ctermfg=127  guifg=#af00af
+hi mailQuoted1      ctermfg=31   guifg=#0087af
+hi mailQuoted2      ctermfg=64   guifg=#5f8700
+hi mailQuoted3      ctermfg=136  guifg=#af8700
+hi mailQuoted4      ctermfg=130  guifg=#af5f00
+hi mailQuoted5      ctermfg=160  guifg=#d70000
+hi mailQuoted6      ctermfg=5    guifg=#800080
+hi mailSignature    ctermfg=102  guifg=#878787
+
+" Markdown
+hi markdownCodeBlock            guibg=NONE   guifg=#87875f ctermbg=NONE ctermfg=101
+hi markdownCode                 guibg=NONE   guifg=#87875f ctermbg=NONE ctermfg=101
+" }}}
