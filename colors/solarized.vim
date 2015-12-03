@@ -1169,4 +1169,5 @@ hi mailSignature    ctermfg=102  guifg=#878787
 " Markdown
 hi markdownCodeBlock            guibg=NONE   guifg=#87875f ctermbg=NONE ctermfg=101
 hi markdownCode                 guibg=NONE   guifg=#87875f ctermbg=NONE ctermfg=101
+hi markdownURL                                                          ctermfg=37
 " }}}
