@@ -1129,6 +1129,22 @@ hi CursorLineNr          ctermfg=248   ctermbg=235 guifg=#bcbcbc
 " Don't underline folds: changed from s:fmt_undbd to just bolding
 exe "hi! Folded"         .s:fmt_bold   .s:fg_base0  .s:bg_base02
 
+" one dark settings for reference
+"   let s:white = { "gui": "#ABB2BF", "cterm": "145", "cterm16" : "7" }
+"   let s:black = { "gui": "#282C34", "cterm": "235", "cterm16": "8" }
+"   let s:cursor_grey =  { "gui": "#2C323B", "cterm": "236", "cterm16": "15" } 
+"   call s:h("LineNr", { "fg": s:gutter_fg_grey, "bg": s:gutter_bg_grey }) 
+
+" one dark term colors
+hi Statement            ctermfg=170   
+hi Constant             ctermfg=114  
+hi Number               ctermfg=173
+hi Normal               ctermfg=145     ctermbg=235
+hi Comment              ctermfg=59    
+hi CursorLine                           ctermbg=236
+hi LineNr               ctermfg=238
+hi Folded                               ctermbg=236
+hi vimVar               ctermfg=204
 " }}}
 " ADDITIONS {{{
 " ---------------------------------------------------------------------
