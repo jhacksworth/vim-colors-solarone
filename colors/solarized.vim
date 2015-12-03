@@ -1145,6 +1145,7 @@ hi CursorLine                           ctermbg=236
 hi LineNr               ctermfg=238
 hi Folded                               ctermbg=236
 hi vimVar               ctermfg=204
+hi Special              ctermfg=160
 " }}}
 " ADDITIONS {{{
 " ---------------------------------------------------------------------
