@@ -1123,6 +1123,9 @@ exe "hi! DiffChange"     .s:fmt_revr   .s:fg_yellow .s:bg_none
 exe "hi! DiffDelete"     .s:fmt_revr   .s:fg_red    .s:bg_none
 exe "hi! DiffText"       .s:fmt_revr   .s:fg_blue   .s:bg_none
 
+exe "hi! DiffAdded"                     .s:fg_green  .s:bg_none
+exe "hi! DiffRemoved"                   .s:fg_red    .s:bg_none
+
 "exe "hi! CursorLineNr"   .s:fmt_uopt   .s:fg_base2  .s:bg_base02
 hi CursorLineNr          ctermfg=248   ctermbg=235 guifg=#bcbcbc
 
